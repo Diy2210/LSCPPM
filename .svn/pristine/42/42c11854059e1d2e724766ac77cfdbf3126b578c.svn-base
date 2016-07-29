@@ -1,0 +1,167 @@
+//
+//  NewsTableViewController.swift
+//  LSCPPM
+//
+//  Created by Diy2210 on 26.04.16.
+//  Copyright © 2016 Diy2210. All rights reserved.
+//
+
+import UIKit
+import CoreData
+
+class NewsTableViewController: UITableViewController, NSXMLParserDelegate {
+
+    var parser = NSXMLParser()
+    var news = NSMutableArray()
+    var elements = NSMutableDictionary()
+    var element = NSString()
+    
+    var messageId = NSMutableString()
+    var messageType = NSMutableString()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        news = []
+        let url: NSURL = NSURL(string:"(Settings.sharedInstance.MessagesEndPoint)?lastId=&limit=")!
+        parser = NSXMLParser(contentsOfURL: url)!
+        parser.delegate = self
+        parser.shouldProcessNamespaces = false
+        parser.shouldReportNamespacePrefixes = false
+        parser.shouldResolveExternalEntities = false
+        parser.parse()
+    }
+    
+        func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
+            
+            element = elementName
+            if (element as NSString).isEqualToString("supportMessage") {
+                elements = NSMutableDictionary()
+                elements = [:]
+                messageId = NSMutableString()
+                messageId = ""
+                messageType = NSMutableString()
+                messageType = ""
+    }
+    
+        func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+                
+            if (elementName as NSString).isEqualToString("supportMessage") {
+                    
+                if messageId != "nil" {
+                elements.setObject(messageId, forKey: "messageId")
+                }
+                if messageType != "nil" {
+                elements.setObject(messageType, forKey: "messageType")
+                }
+                
+                news.addObject(elements)
+                }
+                
+    }
+            
+        func parser(parser: NSXMLParser, foundCharacters string: String) {
+                
+                if element.isEqualToString("messageId") {
+                messageId.appendString(string)
+                }else if element.isEqualToString("messageType") {
+                messageType.appendString(string)
+                }
+            }
+            
+            
+            func parserDidEndDocument(parser: NSXMLParser) {
+                
+                self.tableView.reloadData()
+            }
+    
+        // Refresh Control
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl!.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        self.refreshControl!.addTarget(self, action: #selector(NewsTableViewController.refresh(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.refreshControl!.endRefreshing()
+        
+        
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    // MARK: - Table view data source
+
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return news.count
+    }
+
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("NewsCell", forIndexPath: indexPath)
+
+        cell.textLabel!.text = news.objectAtIndex(indexPath.row).objectForKey("messageId") as? String
+        cell.detailTextLabel?.numberOfLines = 2
+        cell.detailTextLabel?.text = news.objectAtIndex(indexPath.row).objectForKey("messageType") as? String
+
+        return cell
+    }
+    
+
+    /*
+    // Override to support conditional editing of the table view.
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    */
+
+    /*
+    // Override to support editing the table view.
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            // Delete the row from the data source
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        } else if editingStyle == .Insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }    
+    }
+    */
+
+    /*
+    // Override to support rearranging the table view.
+    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
+
+    }
+    */
+
+    /*
+    // Override to support conditional rearranging of the table view.
+    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        // Return false if you do not want the item to be re-orderable.
+        return true
+    }
+    */
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+    
+    // Refresh
+    func refresh(sender:AnyObject) {
+        
+        self.tableView.reloadData()
+        self.refreshControl?.endRefreshing()
+        
+    }
+}

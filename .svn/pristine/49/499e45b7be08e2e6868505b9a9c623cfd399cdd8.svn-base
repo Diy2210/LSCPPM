@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>serverURL</key>
+	<string>https://ls.staging.coderebel.com</string>
+	<key>username</key>
+	<string>wlady_test_partner</string>
+	<key>password</key>
+	<string>wlady_test_partner</string>
+	<key>soapEndPoint</key>
+	<string>/ls/ns/als/clsals</string>
+	<key>authEndPoint</key>
+	<string>/users/is_active_partner</string>
+</dict>
+</plist>

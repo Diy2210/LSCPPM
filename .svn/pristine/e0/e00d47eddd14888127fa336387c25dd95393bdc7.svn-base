@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7713B89B1C5A1A6700B10C04 /* SettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713B89A1C5A1A6700B10C04 /* SettingsTests.swift */; };
+		77496EB91C5A226C002F99A2 /* LSCPPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77496EB81C5A226C002F99A2 /* LSCPPM.swift */; };
+		775F68B11C999EA3009858EC /* SOAPfindCustomers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775F68B01C999EA3009858EC /* SOAPfindCustomers.swift */; };
+		778102061C5909A3007984E6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778102051C5909A3007984E6 /* Settings.swift */; };
+		77BDE9CB1C59143300E43715 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77BDE9CA1C59143300E43715 /* Settings.plist */; };
+		77DBE39E1C807E85007FE289 /* LicenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DBE39D1C807E85007FE289 /* LicenseCell.swift */; };
+		AF0011C11CA4385400DB65D4 /* IpadLSControlPanelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0011C01CA4385400DB65D4 /* IpadLSControlPanelTableViewController.swift */; };
+		AF0011CF1CA965F500DB65D4 /* IpadCustomersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0011CE1CA965F500DB65D4 /* IpadCustomersTableViewController.swift */; };
+		AF0011D11CA9680600DB65D4 /* IpadLicensesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0011D01CA9680600DB65D4 /* IpadLicensesTableViewController.swift */; };
+		AF0011D31CA9732900DB65D4 /* IpadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0011D21CA9732900DB65D4 /* IpadCell.swift */; };
+		AF21AC911CA166CA005963C6 /* IpadAutorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21AC901CA166CA005963C6 /* IpadAutorizationViewController.swift */; };
+		AF21AC931CA166F4005963C6 /* IpadWelcomeSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21AC921CA166F4005963C6 /* IpadWelcomeSplashScreen.swift */; };
+		AF54666E1CA03A2D000AFD04 /* Ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF54666D1CA03A2D000AFD04 /* Ipad.storyboard */; };
+		AF5C328F1C733F380067CF1A /* LicensesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C328E1C733F380067CF1A /* LicensesTableViewController.swift */; };
+		AF62C32F1C99B84A0091D270 /* SOAPfindLicenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62C32E1C99B84A0091D270 /* SOAPfindLicenses.swift */; };
+		AF6320851CA14FE700CE7015 /* IpadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6320841CA14FE700CE7015 /* IpadViewController.swift */; };
+		AF7DD1521C84C3760084B91B /* CustomerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7DD1511C84C3760084B91B /* CustomerDetailsViewController.swift */; };
+		AFBDCBFA1C5B62F3007D333C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778102051C5909A3007984E6 /* Settings.swift */; };
+		AFBDCBFE1C5BA918007D333C /* AutorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCBFD1C5BA918007D333C /* AutorizationViewController.swift */; };
+		AFE63CAA1C8702BA0050B8A5 /* LicenseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE63CA91C8702BA0050B8A5 /* LicenseDetailsViewController.swift */; };
+		AFEC14511C56282B00D68F0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEC14501C56282B00D68F0A /* AppDelegate.swift */; };
+		AFEC14561C56282B00D68F0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFEC14541C56282B00D68F0A /* Main.storyboard */; };
+		AFEC14581C56282B00D68F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFEC14571C56282B00D68F0A /* Assets.xcassets */; };
+		AFEC145B1C56282B00D68F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFEC14591C56282B00D68F0A /* LaunchScreen.storyboard */; };
+		AFF60A111C621567002BD59D /* WelcomeSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF60A101C621567002BD59D /* WelcomeSplashScreen.swift */; };
+		AFFA0F1C1C6E2FAF0057D0D5 /* CustomersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA0F1B1C6E2FAF0057D0D5 /* CustomersTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7713B8951C5A185200B10C04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFEC14451C56282B00D68F0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFEC144C1C56282B00D68F0A;
+			remoteInfo = Demo1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7713B8901C5A185200B10C04 /* LSCPPM.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LSCPPM.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7713B8941C5A185200B10C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7713B89A1C5A1A6700B10C04 /* SettingsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTests.swift; sourceTree = "<group>"; };
+		77496EB81C5A226C002F99A2 /* LSCPPM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSCPPM.swift; sourceTree = "<group>"; };
+		775F68B01C999EA3009858EC /* SOAPfindCustomers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOAPfindCustomers.swift; sourceTree = "<group>"; };
+		778102051C5909A3007984E6 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		77BDE9CA1C59143300E43715 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		77DBE39D1C807E85007FE289 /* LicenseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseCell.swift; sourceTree = "<group>"; };
+		AF0011C01CA4385400DB65D4 /* IpadLSControlPanelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IpadLSControlPanelTableViewController.swift; sourceTree = "<group>"; };
+		AF0011CE1CA965F500DB65D4 /* IpadCustomersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IpadCustomersTableViewController.swift; sourceTree = "<group>"; };
+		AF0011D01CA9680600DB65D4 /* IpadLicensesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IpadLicensesTableViewController.swift; sourceTree = "<group>"; };
+		AF0011D21CA9732900DB65D4 /* IpadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IpadCell.swift; sourceTree = "<group>"; };
+		AF21AC901CA166CA005963C6 /* IpadAutorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IpadAutorizationViewController.swift; sourceTree = "<group>"; };
+		AF21AC921CA166F4005963C6 /* IpadWelcomeSplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IpadWelcomeSplashScreen.swift; sourceTree = "<group>"; };
+		AF54666D1CA03A2D000AFD04 /* Ipad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Ipad.storyboard; sourceTree = "<group>"; };
+		AF5C328E1C733F380067CF1A /* LicensesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensesTableViewController.swift; sourceTree = "<group>"; };
+		AF62C32E1C99B84A0091D270 /* SOAPfindLicenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOAPfindLicenses.swift; sourceTree = "<group>"; };
+		AF6320841CA14FE700CE7015 /* IpadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IpadViewController.swift; sourceTree = "<group>"; };
+		AF7DD1511C84C3760084B91B /* CustomerDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerDetailsViewController.swift; sourceTree = "<group>"; };
+		AFBDCBFD1C5BA918007D333C /* AutorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutorizationViewController.swift; sourceTree = "<group>"; };
+		AFE63CA91C8702BA0050B8A5 /* LicenseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseDetailsViewController.swift; sourceTree = "<group>"; };
+		AFEC144D1C56282B00D68F0A /* LSCPPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSCPPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFEC14501C56282B00D68F0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFEC14551C56282B00D68F0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFEC14571C56282B00D68F0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFEC145A1C56282B00D68F0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFEC145C1C56282B00D68F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF60A101C621567002BD59D /* WelcomeSplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeSplashScreen.swift; sourceTree = "<group>"; };
+		AFFA0F1B1C6E2FAF0057D0D5 /* CustomersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomersTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7713B88D1C5A185200B10C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFEC144A1C56282B00D68F0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7713B8911C5A185200B10C04 /* LSCPPMTests */ = {
+			isa = PBXGroup;
+			children = (
+				77496EB81C5A226C002F99A2 /* LSCPPM.swift */,
+				7713B89A1C5A1A6700B10C04 /* SettingsTests.swift */,
+				7713B8941C5A185200B10C04 /* Info.plist */,
+			);
+			path = LSCPPMTests;
+			sourceTree = "<group>";
+		};
+		AF62C32D1C996F7A0091D270 /* SOAP */ = {
+			isa = PBXGroup;
+			children = (
+				775F68B01C999EA3009858EC /* SOAPfindCustomers.swift */,
+				AF62C32E1C99B84A0091D270 /* SOAPfindLicenses.swift */,
+			);
+			name = SOAP;
+			sourceTree = "<group>";
+		};
+		AF6320861CA14FF000CE7015 /* Ipad */ = {
+			isa = PBXGroup;
+			children = (
+				AF21AC921CA166F4005963C6 /* IpadWelcomeSplashScreen.swift */,
+				AF21AC901CA166CA005963C6 /* IpadAutorizationViewController.swift */,
+				AF0011C01CA4385400DB65D4 /* IpadLSControlPanelTableViewController.swift */,
+				AF0011CE1CA965F500DB65D4 /* IpadCustomersTableViewController.swift */,
+				AF0011D01CA9680600DB65D4 /* IpadLicensesTableViewController.swift */,
+				AF6320841CA14FE700CE7015 /* IpadViewController.swift */,
+				AF0011D21CA9732900DB65D4 /* IpadCell.swift */,
+			);
+			name = Ipad;
+			sourceTree = "<group>";
+		};
+		AFEC14441C56282B00D68F0A = {
+			isa = PBXGroup;
+			children = (
+				AFEC144F1C56282B00D68F0A /* LSCPPM */,
+				7713B8911C5A185200B10C04 /* LSCPPMTests */,
+				AFEC144E1C56282B00D68F0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFEC144E1C56282B00D68F0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFEC144D1C56282B00D68F0A /* LSCPPM.app */,
+				7713B8901C5A185200B10C04 /* LSCPPM.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFEC144F1C56282B00D68F0A /* LSCPPM */ = {
+			isa = PBXGroup;
+			children = (
+				AF6320861CA14FF000CE7015 /* Ipad */,
+				AF62C32D1C996F7A0091D270 /* SOAP */,
+				77BDE9CA1C59143300E43715 /* Settings.plist */,
+				778102051C5909A3007984E6 /* Settings.swift */,
+				AFEC14501C56282B00D68F0A /* AppDelegate.swift */,
+				AFF60A101C621567002BD59D /* WelcomeSplashScreen.swift */,
+				AFBDCBFD1C5BA918007D333C /* AutorizationViewController.swift */,
+				AFFA0F1B1C6E2FAF0057D0D5 /* CustomersTableViewController.swift */,
+				AF7DD1511C84C3760084B91B /* CustomerDetailsViewController.swift */,
+				AF5C328E1C733F380067CF1A /* LicensesTableViewController.swift */,
+				AFE63CA91C8702BA0050B8A5 /* LicenseDetailsViewController.swift */,
+				77DBE39D1C807E85007FE289 /* LicenseCell.swift */,
+				AFEC14541C56282B00D68F0A /* Main.storyboard */,
+				AF54666D1CA03A2D000AFD04 /* Ipad.storyboard */,
+				AFEC14571C56282B00D68F0A /* Assets.xcassets */,
+				AFEC14591C56282B00D68F0A /* LaunchScreen.storyboard */,
+				AFEC145C1C56282B00D68F0A /* Info.plist */,
+			);
+			name = LSCPPM;
+			path = LSSPPM;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7713B88F1C5A185200B10C04 /* LSCPPMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7713B8971C5A185200B10C04 /* Build configuration list for PBXNativeTarget "LSCPPMTests" */;
+			buildPhases = (
+				7713B88C1C5A185200B10C04 /* Sources */,
+				7713B88D1C5A185200B10C04 /* Frameworks */,
+				7713B88E1C5A185200B10C04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7713B8961C5A185200B10C04 /* PBXTargetDependency */,
+			);
+			name = LSCPPMTests;
+			productName = Demo1Tests;
+			productReference = 7713B8901C5A185200B10C04 /* LSCPPM.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFEC144C1C56282B00D68F0A /* LSCPPM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFEC145F1C56282B00D68F0A /* Build configuration list for PBXNativeTarget "LSCPPM" */;
+			buildPhases = (
+				AFEC14491C56282B00D68F0A /* Sources */,
+				AFEC144A1C56282B00D68F0A /* Frameworks */,
+				AFEC144B1C56282B00D68F0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LSCPPM;
+			productName = Demo1;
+			productReference = AFEC144D1C56282B00D68F0A /* LSCPPM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFEC14451C56282B00D68F0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Diy2210;
+				TargetAttributes = {
+					7713B88F1C5A185200B10C04 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = AFEC144C1C56282B00D68F0A;
+					};
+					AFEC144C1C56282B00D68F0A = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2TX55547ZG;
+					};
+				};
+			};
+			buildConfigurationList = AFEC14481C56282B00D68F0A /* Build configuration list for PBXProject "LSCPPM" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFEC14441C56282B00D68F0A;
+			productRefGroup = AFEC144E1C56282B00D68F0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFEC144C1C56282B00D68F0A /* LSCPPM */,
+				7713B88F1C5A185200B10C04 /* LSCPPMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7713B88E1C5A185200B10C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFEC144B1C56282B00D68F0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF54666E1CA03A2D000AFD04 /* Ipad.storyboard in Resources */,
+				AFEC145B1C56282B00D68F0A /* LaunchScreen.storyboard in Resources */,
+				AFEC14581C56282B00D68F0A /* Assets.xcassets in Resources */,
+				AFEC14561C56282B00D68F0A /* Main.storyboard in Resources */,
+				77BDE9CB1C59143300E43715 /* Settings.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7713B88C1C5A185200B10C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFBDCBFA1C5B62F3007D333C /* Settings.swift in Sources */,
+				7713B89B1C5A1A6700B10C04 /* SettingsTests.swift in Sources */,
+				77496EB91C5A226C002F99A2 /* LSCPPM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFEC14491C56282B00D68F0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778102061C5909A3007984E6 /* Settings.swift in Sources */,
+				AFF60A111C621567002BD59D /* WelcomeSplashScreen.swift in Sources */,
+				AFFA0F1C1C6E2FAF0057D0D5 /* CustomersTableViewController.swift in Sources */,
+				775F68B11C999EA3009858EC /* SOAPfindCustomers.swift in Sources */,
+				AFBDCBFE1C5BA918007D333C /* AutorizationViewController.swift in Sources */,
+				AF7DD1521C84C3760084B91B /* CustomerDetailsViewController.swift in Sources */,
+				77DBE39E1C807E85007FE289 /* LicenseCell.swift in Sources */,
+				AF21AC911CA166CA005963C6 /* IpadAutorizationViewController.swift in Sources */,
+				AFE63CAA1C8702BA0050B8A5 /* LicenseDetailsViewController.swift in Sources */,
+				AF6320851CA14FE700CE7015 /* IpadViewController.swift in Sources */,
+				AF62C32F1C99B84A0091D270 /* SOAPfindLicenses.swift in Sources */,
+				AF0011CF1CA965F500DB65D4 /* IpadCustomersTableViewController.swift in Sources */,
+				AFEC14511C56282B00D68F0A /* AppDelegate.swift in Sources */,
+				AF0011D11CA9680600DB65D4 /* IpadLicensesTableViewController.swift in Sources */,
+				AF0011C11CA4385400DB65D4 /* IpadLSControlPanelTableViewController.swift in Sources */,
+				AF5C328F1C733F380067CF1A /* LicensesTableViewController.swift in Sources */,
+				AF21AC931CA166F4005963C6 /* IpadWelcomeSplashScreen.swift in Sources */,
+				AF0011D31CA9732900DB65D4 /* IpadCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7713B8961C5A185200B10C04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFEC144C1C56282B00D68F0A /* LSCPPM */;
+			targetProxy = 7713B8951C5A185200B10C04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFEC14541C56282B00D68F0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFEC14551C56282B00D68F0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFEC14591C56282B00D68F0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFEC145A1C56282B00D68F0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7713B8981C5A185200B10C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Demo1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.Demo1Tests;
+				PRODUCT_NAME = LSCPPM;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LSCPPM.app/LSCPPM";
+			};
+			name = Debug;
+		};
+		7713B8991C5A185200B10C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Demo1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.Demo1Tests;
+				PRODUCT_NAME = LSCPPM;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LSCPPM.app/LSCPPM";
+			};
+			name = Release;
+		};
+		AFEC145D1C56282B00D68F0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFEC145E1C56282B00D68F0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFEC14601C56282B00D68F0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = LSSPPM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Diy2210.LSSPPM;
+				PRODUCT_NAME = LSCPPM;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFEC14611C56282B00D68F0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_TESTABILITY = NO;
+				INFOPLIST_FILE = LSSPPM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Diy2210.LSCPPM;
+				PRODUCT_NAME = LSCPPM;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7713B8971C5A185200B10C04 /* Build configuration list for PBXNativeTarget "LSCPPMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7713B8981C5A185200B10C04 /* Debug */,
+				7713B8991C5A185200B10C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFEC14481C56282B00D68F0A /* Build configuration list for PBXProject "LSCPPM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFEC145D1C56282B00D68F0A /* Debug */,
+				AFEC145E1C56282B00D68F0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFEC145F1C56282B00D68F0A /* Build configuration list for PBXNativeTarget "LSCPPM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFEC14601C56282B00D68F0A /* Debug */,
+				AFEC14611C56282B00D68F0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFEC14451C56282B00D68F0A /* Project object */;
+}

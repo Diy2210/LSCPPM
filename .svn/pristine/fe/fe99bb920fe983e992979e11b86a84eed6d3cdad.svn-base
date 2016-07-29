@@ -1,0 +1,45 @@
+//
+//  IpadLSControlPanelTableViewController.swift
+//  LSCPPM
+//
+//  Created by Diy2210 on 24.03.16.
+//  Copyright © 2016 Diy2210. All rights reserved.
+//
+
+import UIKit
+
+class IpadLSControlPanelTableViewController: UITableViewController {
+    
+    var dashboard = NSMutableArray()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.dashboard.addObject(IpadCell)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    // MARK: - Table view data source
+
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return dashboard.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("CustomersCell", forIndexPath: indexPath) as! IpadCell
+        
+        cell.IpadCustomersLabel.text = dashboard[indexPath.row]["Cusromers"] as? String
+                
+        return cell
+        
+  }
+}

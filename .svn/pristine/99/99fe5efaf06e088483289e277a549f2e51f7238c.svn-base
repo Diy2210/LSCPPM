@@ -1,0 +1,17 @@
+//
+//  IpadCell.swift
+//  LSCPPM
+//
+//  Created by Diy2210 on 28.03.16.
+//  Copyright © 2016 Diy2210. All rights reserved.
+//
+
+import UIKit
+
+class IpadCell: UITableViewCell {
+    
+    @IBOutlet weak var IpadCustomersLabel: UILabel!
+    @IBOutlet weak var IpadLicensesLabel: UILabel!
+    @IBOutlet weak var IpadProductsLabel: UILabel!
+    
+}
